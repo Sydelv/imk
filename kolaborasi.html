@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolaborasi | Info Covid-19</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function kirim() {
+            document.getElementById('msg').innerText =
+                "Pesan berhasil dikirim. Terima kasih telah berkontribusi dalam kolaborasi masyarakat.";
+        }
+    </script>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">🦠 Info Covid-19</div>
+    <ul class="nav-links">
+        <li><a href="beranda.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="edukasi.html">Edukasi</a></li>
+        <li><a class="active" href="kolaborasi.html">Kolaborasi</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+</header>
+
+<section class="container">
+
+    <h2>🤝 Kolaborasi Masyarakat</h2>
+    <p class="subtitle">
+        Halaman ini memungkinkan masyarakat, tenaga kesehatan, dan relawan
+        untuk saling berbagi informasi secara kolaboratif.
+    </p>
+
+    <img 
+        src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144"
+        alt="Kolaborasi kesehatan"
+        class="hero-img"
+    >
+
+    <div class="info-grid">
+
+        <div class="info-card">
+            <h3>Groupware</h3>
+            <p>
+                Website ini menyediakan media bersama untuk berbagi laporan,
+                ide, dan informasi kesehatan antar pengguna.
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h3>CSCW</h3>
+            <p>
+                Mendukung kerja sama masyarakat dan petugas kesehatan dalam
+                pengambilan keputusan berbasis data dan laporan.
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h3>Ubiquitous Computing</h3>
+            <p>
+                Dapat diakses kapan saja dan di mana saja melalui berbagai
+                perangkat (HP, tablet, laptop).
+            </p>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <h3>📝 Form Partisipasi</h3>
+    <p>
+        Sampaikan laporan, ide, atau pertanyaan Anda terkait penanganan Covid-19.
+    </p>
+
+    <form class="contact-form" onsubmit="event.preventDefault(); kirim();">
+        <input type="text" placeholder="Nama Lengkap" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Laporan / Saran / Pertanyaan" rows="5" required></textarea>
+        <button type="submit">Kirim Kontribusi</button>
+    </form>
+
+    <p id="msg" class="success-msg"></p>
+
+</section>
+
+<footer>
+    © 2026 Info Covid-19 | Kolaborasi untuk Kesehatan Bersama
+</footer>
+
+</body>
+</html>
